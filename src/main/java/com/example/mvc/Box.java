@@ -3,14 +3,13 @@ package com.example.mvc;
 public class Box {
  private double x;
  private double y;
- private double width;
- private double height;
+ private double side;
 
-    public Box(double x, double y, double width, double height) {
+
+    public Box(double x, double y) {
         this.x = x;
         this.y = y;
-        this.width = width;
-        this.height = height;
+        this.side = 20;
     }
 
     public double getX() {
@@ -21,11 +20,9 @@ public class Box {
         return y;
     }
 
-    public double getWidth() {
-        return width;
+    public double getSide() {
+        return side;
     }
 
-    public double getHeight() {
-        return height;
-    }
+
 }
